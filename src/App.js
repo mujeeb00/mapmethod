@@ -1,24 +1,71 @@
-import logo from './logo.svg';
-import './App.css';
+
 
 function App() {
+  let cars=[
+  'Toyota',
+  'Honda',
+  "Landstalker",
+	"Bravura",
+	"Buffalo",
+	"Linerunner",
+	"Pereniel",
+	"Sentinel",
+	"Dumper",
+	"Firetruck",
+	"Trashmaster",
+	"Stretch",
+	"Manana",
+	"Infernus",
+	"Voodoo",
+	"Pony",
+	"Mule",
+	"Cheetah",
+	"Ambulance",
+	"Leviathan",
+	"Moonbeam",
+	"Esperanto",
+	"Taxi",
+	"Washington",
+	"Bobcat",
+	"Mr Whoopee",
+	"BF Injection",
+	"Hunter",
+	"Premier",
+	"Enforcer",
+	"Securicar",
+	"Banshee",
+	"Predator",
+	"Bus",
+	"Rhino",
+	"Barracks",
+	"Hotknife",
+	"Trailer",
+	"Previon",
+	"Coach",
+	"Cabbie",
+	"Stallion",
+	"Rumpo",
+	"RC Bandit",
+	"Romero",
+	"Packer",
+	"Monster",
+	"Admiral",
+	"Squalo",
+	"Seasparrow",
+	"Pizzaboy",
+	"Tram"]
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+
+    <>
+    <ol>
+      {cars.map((data)=>{
+        return (
+          <li>{data}</li>
+        )
+      })}
+    </ol>
+    </>
   );
 }
 
